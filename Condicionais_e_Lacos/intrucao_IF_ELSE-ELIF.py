@@ -1,3 +1,5 @@
+import numpy as np
+
 dados = [
     ['Jetta Variant', 2003, False],
     ['Passat', 1991, False],
@@ -13,7 +15,9 @@ dados = [
 
 '''Neste caso, separamos entre os carros novos,
 carros usados e carros antigos'''
-A, B, C = [], [], []
+A = np.array([])
+B = np.array([])
+C = np.array([])
 
 for lista in dados:
     if lista[1] <= 2000:
